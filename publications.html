@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发表的论文 | Publications</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" class="cloud-icon">
+                <h1 class="name" id="name">姓名 | Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">关于我</a></li>
+                    <li><a href="publications.html" class="nav-link active" data-i18n="nav-publications">论文</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="nav-blog">博客</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">联系</a></li>
+                    <li><button id="language-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="publications-title">发表的论文</h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <div class="publication-year" data-i18n="pub1-year">2023</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title" data-i18n="pub1-title">论文标题示例 1</h3>
+                            <p class="publication-authors" data-i18n="pub1-authors">作者 1, 作者 2, 作者 3</p>
+                            <p class="publication-journal" data-i18n="pub1-journal">期刊名称, 卷(期), 页码</p>
+                            <p class="publication-abstract" data-i18n="pub1-abstract">论文摘要或简短描述...</p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> <span data-i18n="pdf">PDF</span></a>
+                                <a href="#" class="publication-link"><i class="fas fa-link"></i> <span data-i18n="doi">DOI</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication-item">
+                        <div class="publication-year" data-i18n="pub2-year">2022</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title" data-i18n="pub2-title">论文标题示例 2</h3>
+                            <p class="publication-authors" data-i18n="pub2-authors">作者 1, 作者 2</p>
+                            <p class="publication-journal" data-i18n="pub2-journal">期刊名称, 卷(期), 页码</p>
+                            <p class="publication-abstract" data-i18n="pub2-abstract">论文摘要或简短描述...</p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> <span data-i18n="pdf">PDF</span></a>
+                                <a href="#" class="publication-link"><i class="fas fa-link"></i> <span data-i18n="doi">DOI</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2023 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html> 

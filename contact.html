@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式 | Contact</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" class="cloud-icon">
+                <h1 class="name" id="name">姓名 | Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">关于我</a></li>
+                    <li><a href="publications.html" class="nav-link" data-i18n="nav-publications">论文</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="nav-blog">博客</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-i18n="nav-contact">联系</a></li>
+                    <li><button id="language-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact-title">联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p data-i18n="email">email@example.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p data-i18n="phone">+86 123 4567 8900</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="location">城市, 国家</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 data-i18n="form-title">发送消息</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form-name">姓名</label>
+                                <input type="text" id="name-input" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="form-email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="form-message">消息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn" data-i18n="form-submit">发送</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2023 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html> 

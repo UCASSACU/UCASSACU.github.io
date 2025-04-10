@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 | Personal Resume</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <div class="physics-elements">
+        <div class="lattice-structure"></div>
+        <div class="electron-orbit"></div>
+        <div class="wave-function"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" class="cloud-icon">
+                <h1 class="name" id="name">姓名 | Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav-about">关于我</a></li>
+                    <li><a href="publications.html" class="nav-link" data-i18n="nav-publications">论文</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="nav-blog">博客</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">联系</a></li>
+                    <li><button id="language-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="highlight" data-i18n="hero-greeting">你好, 我是</h2>
+                    <h1 class="name-large" data-i18n="name">姓名</h1>
+                    <p class="tagline" data-i18n="tagline">职业头衔 | 专业领域</p>
+                    <p class="description" data-i18n="brief-intro">简短的个人介绍，专业背景与研究方向。</p>
+                    <a href="#about" class="btn primary-btn" data-i18n="discover-btn">了解更多</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about-title">关于我</h2>
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Profile Photo" id="profile-photo">
+                    </div>
+                    <div class="about-text">
+                        <p data-i18n="about-p1">这里是你的详细自我介绍，可以包括教育背景、工作经历、研究兴趣等内容。</p>
+                        <p data-i18n="about-p2">介绍你的专业技能、获得的成就以及职业目标。让访问者更好地了解你的专业背景和价值观。</p>
+                        <div class="skills">
+                            <h3 data-i18n="skills-title">技能</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag" data-i18n="skill-1">技能 1</span>
+                                <span class="skill-tag" data-i18n="skill-2">技能 2</span>
+                                <span class="skill-tag" data-i18n="skill-3">技能 3</span>
+                                <span class="skill-tag" data-i18n="skill-4">技能 4</span>
+                                <span class="skill-tag" data-i18n="skill-5">技能 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2023 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html> 

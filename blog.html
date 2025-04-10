@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客 | Blog</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" class="cloud-icon">
+                <h1 class="name" id="name">姓名 | Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">关于我</a></li>
+                    <li><a href="publications.html" class="nav-link" data-i18n="nav-publications">论文</a></li>
+                    <li><a href="blog.html" class="nav-link active" data-i18n="nav-blog">博客</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">联系</a></li>
+                    <li><button id="language-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="blog-title">个人博客</h2>
+                <div class="blog-list">
+                    <!-- 博客条目1 -->
+                    <article class="blog-item">
+                        <div class="blog-content">
+                            <h3 class="blog-title" data-i18n="blog1-title">博客文章标题示例 1</h3>
+                            <div class="blog-meta">
+                                <span class="blog-date" data-i18n="blog1-date">2023年12月15日</span>
+                                <span class="blog-category"><i class="fas fa-tag"></i> Markdown</span>
+                            </div>
+                            <p class="blog-excerpt" data-i18n="blog1-excerpt">文章摘要内容，简单介绍文章的主要内容和观点...</p>
+                            <div class="blog-footer">
+                                <a href="blog-post.html?id=post1" class="read-more">
+                                    <span data-i18n="read-more">阅读更多</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 博客条目2 -->
+                    <article class="blog-item">
+                        <div class="blog-content">
+                            <h3 class="blog-title" data-i18n="blog2-title">博客文章标题示例 2</h3>
+                            <div class="blog-meta">
+                                <span class="blog-date" data-i18n="blog2-date">2023年11月20日</span>
+                                <span class="blog-category"><i class="fas fa-tag"></i> 响应式设计</span>
+                            </div>
+                            <p class="blog-excerpt" data-i18n="blog2-excerpt">文章摘要内容，简单介绍文章的主要内容和观点...</p>
+                            <div class="blog-footer">
+                                <a href="blog-post.html?id=post2" class="read-more">
+                                    <span data-i18n="read-more">阅读更多</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 博客条目3 -->
+                    <article class="blog-item">
+                        <div class="blog-content">
+                            <h3 class="blog-title" data-i18n="blog3-title">博客文章标题示例 3</h3>
+                            <div class="blog-meta">
+                                <span class="blog-date" data-i18n="blog3-date">2023年10月5日</span>
+                                <span class="blog-category"><i class="fas fa-tag"></i> 数据可视化</span>
+                            </div>
+                            <p class="blog-excerpt" data-i18n="blog3-excerpt">文章摘要内容，简单介绍文章的主要内容和观点...</p>
+                            <div class="blog-footer">
+                                <a href="blog-post.html?id=post3" class="read-more">
+                                    <span data-i18n="read-more">阅读更多</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2023 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html> 
