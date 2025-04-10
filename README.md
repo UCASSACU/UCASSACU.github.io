@@ -1,294 +1,294 @@
-# 个人简历网站 | Personal Resume Website
+# Personal Resume Website
 
-一个简洁、专业的个人简历网站模板，具有响应式设计和中英文切换功能。
+A clean and professional personal resume website template with responsive design and bilingual (Chinese/English) language switching capability.
 
-## 零基础快速入门
+## Quick Start Guide for Beginners
 
-如果你不懂网页设计，请按照以下简单步骤自定义你的个人网站：
+If you have no web design experience, follow these simple steps to customize your personal website:
 
-### 1. 基础设置（无需代码知识）
+### 1. Basic Setup (No Coding Knowledge Required)
 
-1. **下载与安装**：
-   - 下载这个模板的压缩包并解压到你的电脑上
-   - 安装一个简单的文本编辑器，推荐 [Visual Studio Code](https://code.visualstudio.com/) 或 [Notepad++](https://notepad-plus-plus.org/)
-   - 安装 [Python](https://www.python.org/downloads/)（用于本地预览网站）
+1. **Download and Install**:
+   - Download the template package and extract it to your computer
+   - Install a simple text editor, recommended: [Visual Studio Code](https://code.visualstudio.com/) or [Notepad++](https://notepad-plus-plus.org/)
+   - Install [Python](https://www.python.org/downloads/) (for local website preview)
 
-2. **修改个人资料**：
-   - 打开 `js/main.js` 文件
-   - 找到以下内容（约在文件开头）：
+2. **Modify Personal Information**:
+   - Open the `js/main.js` file
+   - Find the following content (near the beginning of the file):
      ```
-     'name': '姓名',
-     'tagline': '职业头衔 | 专业领域',
-     'brief-intro': '简短的个人介绍...'
+     'name': 'Name',
+     'tagline': 'Job Title | Field of Expertise',
+     'brief-intro': 'Brief personal introduction...'
      ```
-   - 直接修改引号中的文字（不要删除引号和逗号）
+   - Directly modify the text inside the quotes (do not delete the quotes or commas)
 
-3. **更换照片**：
-   - 准备一张你的证件照（建议正方形，比如 300×300 像素）
-   - 重命名为 `profile.jpg`
-   - 替换到 `images` 文件夹中（覆盖原有的文件）
+3. **Replace Photo**:
+   - Prepare your portrait photo (square format recommended, e.g., 300×300 pixels)
+   - Rename it to `profile.jpg`
+   - Replace the file in the `images` folder (overwrite the existing file)
 
-4. **预览网站**：
-   - 打开命令提示符（Windows）或终端（Mac）
-   - 输入以下命令进入你的网站目录：
+4. **Preview Website**:
+   - Open Command Prompt (Windows) or Terminal (Mac)
+   - Enter the following command to navigate to your website directory:
      ```
-     cd 你的网站目录的完整路径
+     cd complete/path/to/your/website
      ```
-   - 输入以下命令启动本地服务器：
+   - Enter the following command to start a local server:
      ```
      python -m http.server 8080
      ```
-   - 在浏览器中访问 http://localhost:8080
+   - Visit http://localhost:8080 in your browser
 
-### 2. 常见问题与解决方法
+### 2. Common Issues and Solutions
 
-1. **图片不显示**：
-   - 确保图片文件存在于正确的文件夹中
-   - 检查图片的格式是否为 jpg、png 或 svg
-   - 确保文件名与代码中的一致（区分大小写）
+1. **Images Not Displaying**:
+   - Ensure image files exist in the correct folders
+   - Check if the image format is jpg, png, or svg
+   - Make sure the filenames match those in the code (case-sensitive)
 
-2. **文字没有更新**：
-   - 确保保存了修改的文件
-   - 尝试清除浏览器缓存（按 Ctrl+F5 或 Cmd+Shift+R）
-   - 检查是否修改了正确的文本内容（注意引号内的文字）
+2. **Text Not Updating**:
+   - Ensure you've saved the modified files
+   - Try clearing your browser cache (press Ctrl+F5 or Cmd+Shift+R)
+   - Check if you modified the correct text content (inside the quotes)
 
-3. **本地服务器启动失败**：
-   - 确认已安装 Python
-   - 确认当前目录是网站根目录
-   - 如果端口被占用，尝试更换端口号：`python -m http.server 8081`
+3. **Local Server Startup Failure**:
+   - Confirm that Python is installed
+   - Verify the current directory is the website root
+   - If the port is occupied, try changing the port: `python -m http.server 8081`
 
-### 3. 无代码自定义技巧
+### 3. No-Code Customization Tips
 
-1. **修改网站颜色**：
-   - 打开 `styles/main.css` 文件
-   - 找到以下内容（约在文件开头）：
+1. **Change Website Colors**:
+   - Open the `styles/main.css` file
+   - Find the following content (near the beginning of the file):
      ```css
      :root {
          --primary-color: #4ECDC4;
          --secondary-color: #556270;
          --accent-color: #FF6B6B;
-         /* ... 其他颜色 ... */
+         /* ... other colors ... */
      }
      ```
-   - 修改这些颜色代码（可以使用[在线颜色选择器](https://htmlcolorcodes.com/)）
+   - Modify these color codes (you can use an [online color picker](https://htmlcolorcodes.com/))
 
-2. **修改技能标签**：
-   - 打开 `js/main.js` 文件
-   - 找到以下类似内容：
+2. **Modify Skill Tags**:
+   - Open the `js/main.js` file
+   - Find similar content:
      ```javascript
-     'skill-1': '技能 1',
-     'skill-2': '技能 2',
+     'skill-1': 'Skill 1',
+     'skill-2': 'Skill 2',
      ```
-   - 修改为你自己的技能
+   - Replace with your own skills
 
-3. **修改联系信息**：
-   - 在 `js/main.js` 中找到：
+3. **Update Contact Information**:
+   - In `js/main.js`, find:
      ```javascript
      'email': 'email@example.com',
      'phone': '+86 123 4567 8900',
-     'location': '城市, 国家',
+     'location': 'City, Country',
      ```
-   - 替换为你的联系方式
+   - Replace with your contact details
 
-### 4. 推荐在线工具
+### 4. Recommended Online Tools
 
-以下工具可以帮助你在不懂代码的情况下进行更多自定义：
+The following tools can help you customize more without coding knowledge:
 
-1. **图片优化工具**：
-   - [TinyPNG](https://tinypng.com/) - 压缩图片大小而不损失质量
-   - [Canva](https://www.canva.com/) - 创建精美的banner和标志
+1. **Image Optimization Tools**:
+   - [TinyPNG](https://tinypng.com/) - Compress images without losing quality
+   - [Canva](https://www.canva.com/) - Create beautiful banners and logos
 
-2. **颜色选择工具**：
-   - [Coolors](https://coolors.co/) - 生成配色方案
-   - [Color Hunt](https://colorhunt.co/) - 流行的色彩组合
+2. **Color Selection Tools**:
+   - [Coolors](https://coolors.co/) - Generate color schemes
+   - [Color Hunt](https://colorhunt.co/) - Popular color combinations
 
-3. **图标资源**：
-   - [Font Awesome](https://fontawesome.com/icons) - 查找适合的图标
-   - [Flaticon](https://www.flaticon.com/) - 免费图标下载
+3. **Icon Resources**:
+   - [Font Awesome](https://fontawesome.com/icons) - Find suitable icons
+   - [Flaticon](https://www.flaticon.com/) - Free icon downloads
 
-4. **在线编辑器**：
-   - [CodePen](https://codepen.io/) - 测试HTML/CSS修改
-   - [JS Bin](https://jsbin.com/) - 快速测试前端代码
+4. **Online Editors**:
+   - [CodePen](https://codepen.io/) - Test HTML/CSS modifications
+   - [JS Bin](https://jsbin.com/) - Quick front-end code testing
 
-### 5. 部署网站（简易版）
+### 5. Website Deployment (Simplified)
 
-按照以下简单步骤将网站发布到网络上：
+Follow these simple steps to publish your website online:
 
-1. **使用GitHub Pages（免费）**：
-   - 注册 [GitHub](https://github.com/) 账号
-   - 下载并安装 [GitHub Desktop](https://desktop.github.com/)
-   - 创建新仓库，名称为：`你的用户名.github.io`
-   - 将网站文件复制到仓库文件夹
-   - 点击"Commit to main"并"Push to origin"
-   - 几分钟后访问：`https://你的用户名.github.io`
+1. **Using GitHub Pages (Free)**:
+   - Register a [GitHub](https://github.com/) account
+   - Download and install [GitHub Desktop](https://desktop.github.com/)
+   - Create a new repository named: `yourusername.github.io`
+   - Copy your website files to the repository folder
+   - Click "Commit to main" and "Push to origin"
+   - After a few minutes, visit: `https://yourusername.github.io`
 
-2. **其他免费托管选项**：
-   - [Netlify](https://www.netlify.com/) - 拖放上传文件夹即可部署
-   - [Vercel](https://vercel.com/) - 支持简单部署静态网站
-   - [Surge](https://surge.sh/) - 命令行工具，一行代码部署
+2. **Other Free Hosting Options**:
+   - [Netlify](https://www.netlify.com/) - Deploy by dragging and dropping your folder
+   - [Vercel](https://vercel.com/) - Supports simple static website deployment
+   - [Surge](https://surge.sh/) - Command-line tool, one-line code deployment
 
-### 6. 简易博客更新指南
+### 6. Easy Blog Update Guide
 
-不需要了解Markdown和代码也能更新博客：
+You can update blogs without understanding Markdown or code:
 
-1. **修改现有博客内容**：
-   - 找到并打开 `posts` 目录
-   - 用文本编辑器打开任意博客文件（如 `post1.md`）
-   - 直接修改文件内容即可更新博客文章
-   - 注意保持格式：标题前面的 `#` 号和其他符号不要删除
+1. **Modify Existing Blog Content**:
+   - Find and open the `posts` directory
+   - Open any blog file (e.g., `post1.md`) with a text editor
+   - Directly modify the file content to update the blog post
+   - Maintain the format: don't remove the `#` symbol before titles and other formatting marks
 
-2. **添加新博客**：
-   - 复制一个现有的 `.md` 文件（如 `post1.md`）
-   - 重命名为新名称（如 `post4.md`）
-   - 打开并修改内容
-   - 更新博客列表：
-     1. 打开 `blog.html` 文件
-     2. 找到类似下面的代码块：
+2. **Add a New Blog**:
+   - Copy an existing `.md` file (e.g., `post1.md`)
+   - Rename it (e.g., `post4.md`)
+   - Open and modify the content
+   - Update the blog list:
+     1. Open the `blog.html` file
+     2. Find code blocks similar to:
         ```html
         <div class="blog-item">
             <div class="blog-content">
-                <!-- 博客信息 -->
+                <!-- Blog info -->
             </div>
         </div>
         ```
-     3. 复制整个代码块并粘贴到同级位置
-     4. 修改新复制块中的博客标题、日期和链接
+     3. Copy the entire block and paste it at the same level
+     4. Modify the blog title, date, and link in the newly copied block
 
-3. **添加博客图片**：
-   - 将图片文件放入 `images/blog` 目录
-   - 图片名称建议使用英文和数字，避免空格
-   - 在博客文件中引用图片：
+3. **Add Blog Images**:
+   - Place image files in the `images/blog` directory
+   - Use English and numbers for image names, avoid spaces
+   - Reference images in blog files:
      ```
-     ![图片描述](images/blog/你的图片文件名.jpg)
+     ![Image description](images/blog/your-image-filename.jpg)
      ```
 
-### 7. 文件编辑小技巧
+### 7. File Editing Tips
 
-1. **查找和替换**：
-   - 使用文本编辑器的"查找"功能（通常是Ctrl+F或Cmd+F）
-   - 要批量修改相同内容，使用"替换"功能（通常是Ctrl+H或Cmd+H）
+1. **Find and Replace**:
+   - Use your text editor's "Find" function (usually Ctrl+F or Cmd+F)
+   - For batch modifications of the same content, use "Replace" (usually Ctrl+H or Cmd+H)
 
-2. **复制粘贴注意事项**：
-   - 从Word等软件复制文本可能会带入不可见格式导致错误
-   - 建议先粘贴到记事本等纯文本编辑器，再复制到代码文件中
+2. **Copy-Paste Considerations**:
+   - Copying text from Word or similar software may bring invisible formatting that causes errors
+   - First paste into Notepad or other plain text editors, then copy to code files
 
-3. **保存文件注意事项**：
-   - 保存文件时使用原格式（如.html, .js, .css）
-   - 确保文件编码为UTF-8（大多数现代编辑器默认为此编码）
-   - 不要改变文件的扩展名
+3. **File Saving Notes**:
+   - Save files using their original formats (e.g., .html, .js, .css)
+   - Ensure file encoding is UTF-8 (default in most modern editors)
+   - Don't change file extensions
 
-更详细的修改说明请参考下方的完整使用指南。
+For more detailed modification instructions, refer to the complete guide below.
 
-## 特点
+## Features
 
-- 现代简洁设计
-- 多页面结构，易于导航
-- 响应式布局，适应所有设备尺寸
-- 渐变背景效果
-- 中英文语言切换（包括页面跳转时保持语言选择）
-- 包含个人简介、发表论文、个人博客和联系方式页面
-- 博客支持Markdown格式编写和代码高亮
-- 平滑滚动和过渡动画
-- 使用纯HTML、CSS和JavaScript构建，无需框架
+- Modern clean design
+- Multi-page structure, easy navigation
+- Responsive layout, adapts to all device sizes
+- Gradient background effect
+- Chinese/English language switching (preserves language choice during page navigation)
+- Includes personal introduction, publications, personal blog, and contact pages
+- Blog supports Markdown format and code highlighting
+- Smooth scrolling and transition animations
+- Built with pure HTML, CSS, and JavaScript, no frameworks required
 
-## 如何使用
+## How to Use
 
-1. 克隆或下载此仓库
-2. 根据需要修改以下文件：
-   - `index.html`: 更新个人信息和简介
-   - `publications.html`: 更新发表的论文信息
-   - `blog.html`: 更新博客内容
-   - `contact.html`: 更新联系方式
-   - `js/main.js`: 编辑中英文翻译文本
-   - `styles/main.css`: 根据个人喜好调整颜色和样式
-   - `images/`: 替换个人照片和博客图片
+1. Clone or download this repository
+2. Modify the following files as needed:
+   - `index.html`: Update personal information and introduction
+   - `publications.html`: Update published papers information
+   - `blog.html`: Update blog content
+   - `contact.html`: Update contact information
+   - `js/main.js`: Edit Chinese/English translation text
+   - `styles/main.css`: Adjust colors and styles according to preference
+   - `images/`: Replace personal photos and blog images
 
-## 网站内容修改攻略
+## Website Content Modification Guide
 
-### 1. 修改个人信息
+### 1. Modify Personal Information
 
-#### 基本信息修改
-- 打开`js/main.js`，找到`translations`对象
-- 修改以下键值对：
+#### Basic Information Changes
+- Open `js/main.js`, find the `translations` object
+- Modify the following key-value pairs:
   ```javascript
-  'name': '姓名', // 改为你的姓名
-  'tagline': '职业头衔 | 专业领域', // 改为你的职业信息
-  'brief-intro': '简短的个人介绍...' // 个人简介
+  'name': 'Name', // Change to your name
+  'tagline': 'Job Title | Field of Expertise', // Change to your professional info
+  'brief-intro': 'Brief personal introduction...' // Personal intro
   ```
-- 同时更新英文版本（`en`对象中的相应条目）
+- Also update the English version (corresponding entries in the `en` object)
 
-#### 关于我页面
-- 修改`index.html`中的个人描述部分
-- 或在`js/main.js`中修改以下翻译项：
+#### About Me Page
+- Modify the personal description section in `index.html`
+- Or in `js/main.js`, modify the following translations:
   ```javascript
-  'about-p1': '这里是你的详细自我介绍...',
-  'about-p2': '介绍你的专业技能、获得的成就...'
+  'about-p1': 'This is your detailed self-introduction...',
+  'about-p2': 'Introduce your professional skills, achievements...'
   ```
 
-#### 技能标签
-- 在`index.html`中找到技能标签部分
-- 添加或删除技能标签：
+#### Skill Tags
+- Find the skill tags section in `index.html`
+- Add or remove skill tags:
   ```html
   <div class="skill-tags">
-      <span class="skill-tag" data-i18n="skill-1">技能 1</span>
-      <!-- 添加更多技能 -->
+      <span class="skill-tag" data-i18n="skill-1">Skill 1</span>
+      <!-- Add more skills -->
   </div>
   ```
-- 在`js/main.js`中添加相应的翻译
+- Add corresponding translations in `js/main.js`
 
-### 2. 修改论文信息
+### 2. Modify Publications Information
 
-- 打开`publications.html`，找到论文列表部分
-- 复制现有论文条目，调整数量
-- 对于每篇论文，在`js/main.js`中添加翻译：
+- Open `publications.html`, find the publications list section
+- Copy existing publication entries, adjust the quantity
+- For each paper, add translations in `js/main.js`:
   ```javascript
   'pub3-year': '2021',
-  'pub3-title': '你的论文标题',
-  'pub3-authors': '作者列表',
-  'pub3-journal': '期刊名称...',
-  'pub3-abstract': '论文摘要...'
+  'pub3-title': 'Your Paper Title',
+  'pub3-authors': 'Author List',
+  'pub3-journal': 'Journal Name...',
+  'pub3-abstract': 'Paper Abstract...'
   ```
 
-### 3. 修改博客内容
+### 3. Modify Blog Content
 
-#### 更新博客列表
-- 打开`blog.html`，找到博客条目部分
-- 复制现有博客条目结构，修改链接和数据属性
-- 在`js/main.js`中添加新的博客翻译：
+#### Update Blog List
+- Open `blog.html`, find the blog entry section
+- Copy existing blog entry structure, modify links and data attributes
+- Add new blog translations in `js/main.js`:
   ```javascript
-  'blog4-date': '2023年X月X日',
-  'blog4-title': '新博客标题',
-  'blog4-excerpt': '博客摘要内容...'
+  'blog4-date': 'Month X, 2023',
+  'blog4-title': 'New Blog Title',
+  'blog4-excerpt': 'Blog summary content...'
   ```
 
-#### 博客列表样式
-博客列表采用简洁的垂直列表布局，不使用图片，这样可以：
-- 提高页面加载速度
-- 避免图片资源不可用的问题
-- 专注于内容展示
-- 在手机等小屏幕设备上提供更好的阅读体验
+#### Blog List Style
+The blog list uses a clean vertical layout without images, which:
+- Improves page loading speed
+- Avoids image resource unavailability issues
+- Focuses on content presentation
+- Provides better reading experience on mobile and small-screen devices
 
-每个博客条目包含：
-- 标题
-- 发布日期
-- 博客分类/标签（使用FontAwesome图标）
-- 摘要内容
-- "阅读更多"链接（带动画效果）
+Each blog entry contains:
+- Title
+- Publication date
+- Blog category/tags (using FontAwesome icons)
+- Summary content
+- "Read More" link (with animation effect)
 
-自定义博客标签：
+Custom blog tags:
 ```html
-<span class="blog-category"><i class="fas fa-tag"></i> 你的标签名称</span>
+<span class="blog-category"><i class="fas fa-tag"></i> Your Tag Name</span>
 ```
 
-#### 添加新博客文章
-1. 在`posts/`目录创建新的Markdown文件（如`post4.md`）
-2. 按照现有格式编写内容
-3. 打开`js/blog-post.js`，在`blogPosts`对象中添加：
+#### Add New Blog Articles
+1. Create a new Markdown file in the `posts/` directory (e.g., `post4.md`)
+2. Write content following the existing format
+3. Open `js/blog-post.js`, add to the `blogPosts` object:
    ```javascript
    'post4': {
        title: {
-           zh: '中文标题',
-           en: '英文标题'
+           zh: 'Chinese Title',
+           en: 'English Title'
        },
        date: {
            zh: '2023年X月X日',
@@ -297,393 +297,393 @@
        markdown: 'posts/post4.md'
    }
    ```
-4. 在同文件的`postIds`数组中添加`'post4'`
-5. 在`blog.html`中添加新的博客条目
+4. Add `'post4'` to the `postIds` array in the same file
+5. Add a new blog entry in `blog.html`
 
-#### 嵌入式博客内容（备用方案）
-为了解决本地文件系统限制，网站提供了嵌入式博客内容作为备用方案：
+#### Embedded Blog Content (Fallback)
+To address local file system limitations, the website provides embedded blog content as a fallback:
 
-1. 打开`js/blog-post.js`
-2. 找到`loadEmbeddedBlogContent`函数
-3. 为新添加的博客文章添加嵌入式内容：
+1. Open `js/blog-post.js`
+2. Find the `loadEmbeddedBlogContent` function
+3. Add embedded content for your new blog post:
    ```javascript
    else if (postId === 'post4') {
-       content = `# 你的博客标题
+       content = `# Your Blog Title
        
-       *发表于2023年X月X日*
+       *Published on Month X, 2023*
        
-       你的博客内容...`;
+       Your blog content...`;
    }
    ```
 
-### 4. 修改联系方式
+### 4. Modify Contact Information
 
-- 打开`contact.html`
-- 更新联系信息，或在`js/main.js`中修改：
+- Open `contact.html`
+- Update contact information, or modify in `js/main.js`:
   ```javascript
   'email': 'your.email@example.com',
-  'phone': '你的电话号码',
-  'location': '你的位置'
+  'phone': 'Your Phone Number',
+  'location': 'Your Location'
   ```
 
-### 5. 修改网站样式
+### 5. Modify Website Style
 
-#### 颜色方案
-- 打开`styles/main.css`，修改CSS变量：
+#### Color Scheme
+- Open `styles/main.css`, modify CSS variables:
   ```css
   :root {
-      --primary-color: #你喜欢的颜色;
-      --secondary-color: #你喜欢的颜色;
-      --accent-color: #你喜欢的颜色;
-      --bg-gradient-start: #你喜欢的颜色;
-      --bg-gradient-end: #你喜欢的颜色;
+      --primary-color: #your-color;
+      --secondary-color: #your-color;
+      --accent-color: #your-color;
+      --bg-gradient-start: #your-color;
+      --bg-gradient-end: #your-color;
   }
   ```
 
-#### Logo和图片
-- 替换`images/logo.svg`为你自己的logo
-- 替换`images/profile.jpg`为你的个人照片
-- 更新`images/blog/`目录中的博客图片
+#### Logo and Images
+- Replace `images/logo.svg` with your own logo
+- Replace `images/profile.jpg` with your personal photo
+- Update blog images in the `images/blog/` directory
 
-#### 字体和间距
-- 在`styles/main.css`中修改字体和间距设置：
+#### Fonts and Spacing
+- Modify font and spacing settings in `styles/main.css`:
   ```css
   body {
-      font-family: '你喜欢的字体', sans-serif;
-      /* 其他样式 */
+      font-family: 'your-preferred-font', sans-serif;
+      /* other styles */
   }
   ```
 
-### 6. 添加/修改页面元素
+### 6. Add/Modify Page Elements
 
-如需添加新的文本元素并支持多语言：
+To add new text elements with multilingual support:
 
-1. 在HTML中添加元素并设置`data-i18n`属性：
+1. Add elements in HTML with `data-i18n` attribute:
    ```html
-   <p data-i18n="new-element">新内容</p>
+   <p data-i18n="new-element">New Content</p>
    ```
 
-2. 在`js/main.js`的`translations`对象中添加翻译：
+2. Add translations in the `translations` object in `js/main.js`:
    ```javascript
-   'new-element': '新内容的中文',  // zh对象中
-   'new-element': 'New content in English',  // en对象中
+   'new-element': 'Chinese content',  // in zh object
+   'new-element': 'English content',  // in en object
    ```
 
-### 7. 网站结构优化
+### 7. Website Structure Optimization
 
-网站采用了清晰的多页面结构，各页面功能划分明确：
+The website uses a clear multi-page structure, with each page having well-defined functions:
 
-#### 首页简化设计
-- 首页(`index.html`)只保留"关于我"部分，移除了重复的论文、博客和联系方式部分
-- 使用导航按钮引导访问者前往专门的内容页面：
+#### Simplified Homepage Design
+- The homepage (`index.html`) only keeps the "About Me" section, removing duplicate paper, blog, and contact sections
+- Uses navigation buttons to guide visitors to dedicated content pages:
   ```html
   <div class="cta-buttons">
-      <a href="publications.html" class="btn primary-btn" data-i18n="view-publications">查看论文</a>
-      <a href="blog.html" class="btn primary-btn" data-i18n="view-blog">浏览博客</a>
-      <a href="contact.html" class="btn primary-btn" data-i18n="contact-me">联系我</a>
+      <a href="publications.html" class="btn primary-btn" data-i18n="view-publications">View Publications</a>
+      <a href="blog.html" class="btn primary-btn" data-i18n="view-blog">Browse Blog</a>
+      <a href="contact.html" class="btn primary-btn" data-i18n="contact-me">Contact Me</a>
   </div>
   ```
-- 这种设计保持首页简洁专注，使用户能更快地了解你的核心信息
+- This design keeps the homepage concise and focused, allowing users to quickly understand your core information
 
-#### 专业内容页面
-- **论文页面**(`publications.html`): 集中展示学术成果和研究论文
-- **博客页面**(`blog.html`): 使用优化的无图片列表布局展示博客文章
-- **博客详情页**(`blog-post.html`): 展示完整博客内容，支持Markdown和代码高亮
-- **联系页面**(`contact.html`): 提供联系方式和联系表单
+#### Professional Content Pages
+- **Publications Page** (`publications.html`): Focuses on academic achievements and research papers
+- **Blog Page** (`blog.html`): Uses optimized image-free list layout to display blog posts
+- **Blog Detail Page** (`blog-post.html`): Displays complete blog content, supports Markdown and code highlighting
+- **Contact Page** (`contact.html`): Provides contact methods and contact form
 
-通过这种结构优化，既减少了页面加载内容，提高了性能，也提供了更清晰的用户体验和内容导航。
+This structure optimization reduces page loading content, improves performance, and provides clearer user experience and content navigation.
 
-## 本地开发与部署
+## Local Development and Deployment
 
-### 运行本地服务器
+### Running a Local Server
 
-由于浏览器安全限制，直接打开HTML文件可能无法正常加载Markdown文件。建议使用本地服务器来开发和预览网站：
+Due to browser security restrictions, directly opening HTML files may not properly load Markdown files. It's recommended to use a local server to develop and preview the website:
 
-1. **使用Python（推荐）**：
+1. **Using Python (Recommended)**:
    ```bash
-   # 进入网站目录
-   cd 你的网站目录
+   # Navigate to your website directory
+   cd your-website-directory
    
    # Python 3
    python -m http.server 8080
    
-   # 或 Python 2
+   # Or Python 2
    python -m SimpleHTTPServer 8080
    ```
-   然后访问 http://localhost:8080
+   Then visit http://localhost:8080
 
-2. **使用Node.js**：
-   - 安装http-server: `npm install -g http-server`
-   - 运行: `http-server -p 8080`
+2. **Using Node.js**:
+   - Install http-server: `npm install -g http-server`
+   - Run: `http-server -p 8080`
 
-3. **使用VSCode Live Server插件**：
-   - 安装Live Server插件
-   - 右键点击HTML文件，选择"Open with Live Server"
+3. **Using VSCode Live Server Plugin**:
+   - Install the Live Server plugin
+   - Right-click on an HTML file, select "Open with Live Server"
 
-### 使用GitHub Pages部署（详细步骤）
+### Deploying with GitHub Pages (Detailed Steps)
 
-GitHub Pages是GitHub提供的免费静态网站托管服务，非常适合部署这个个人简历网站。以下是面向零基础用户的详细部署步骤：
+GitHub Pages is a free static website hosting service provided by GitHub, perfect for deploying this personal resume website. Here are detailed deployment steps for beginners:
 
-#### 第1步：创建GitHub账号
+#### Step 1: Create a GitHub Account
 
-1. 访问 [GitHub官网](https://github.com/)
-2. 点击右上角的"Sign up"按钮
-3. 填写用户名、电子邮件和密码
-4. 完成验证步骤
-5. 选择免费计划（Free）
-6. 完成注册流程
+1. Visit [GitHub's website](https://github.com/)
+2. Click the "Sign up" button in the top right
+3. Fill in username, email, and password
+4. Complete the verification steps
+5. Choose the free plan (Free)
+6. Complete the registration process
 
-#### 第2步：创建新仓库
+#### Step 2: Create a New Repository
 
-1. 登录GitHub账号
-2. 点击右上角"+"图标，选择"New repository"
-3. 在"Repository name"字段中输入：`你的用户名.github.io`
-   - 例如，如果你的GitHub用户名是johndoe，则输入`johndoe.github.io`
-   - **注意**：必须严格遵循这个格式，才能使用默认域名
-4. 保持仓库为"Public"（公开）
-5. 点击"Create repository"按钮
+1. Log in to your GitHub account
+2. Click the "+" icon in the top right, select "New repository"
+3. In the "Repository name" field, enter: `yourusername.github.io`
+   - For example, if your GitHub username is johndoe, enter `johndoe.github.io`
+   - **Note**: You must strictly follow this format to use the default domain
+4. Keep the repository "Public"
+5. Click the "Create repository" button
 
-#### 第3步：上传网站文件（使用GitHub网页界面）
+#### Step 3: Upload Website Files (Using GitHub Web Interface)
 
-如果你不熟悉Git命令行，可以使用GitHub的网页界面上传文件：
+If you're not familiar with Git command line, you can use GitHub's web interface to upload files:
 
-1. 在新创建的仓库页面，点击"uploading an existing file"链接
-2. 将你电脑上的所有网站文件拖拽到上传区域
-   - 确保上传所有文件和文件夹，包括HTML文件、CSS、JavaScript和图片
-   - 如果文件较多，可能需要分批上传
-3. 在页面底部，添加提交信息（例如："上传初始网站文件"）
-4. 点击"Commit changes"按钮
+1. On the new repository page, click the "uploading an existing file" link
+2. Drag and drop all your website files to the upload area
+   - Ensure you upload all files and folders, including HTML files, CSS, JavaScript, and images
+   - If there are many files, you may need to upload in batches
+3. At the bottom of the page, add a commit message (e.g., "Upload initial website files")
+4. Click the "Commit changes" button
 
-#### 第4步：使用GitHub Desktop（更简便的方法）
+#### Step 4: Using GitHub Desktop (Easier Method)
 
-如果文件较多，使用GitHub Desktop会更方便：
+If you have many files, using GitHub Desktop is more convenient:
 
-1. 下载并安装[GitHub Desktop](https://desktop.github.com/)
-2. 登录你的GitHub账号
-3. 点击"Clone a repository from the Internet..."
-4. 选择你刚创建的仓库（`你的用户名.github.io`）
-5. 选择要保存仓库的本地文件夹，点击"Clone"
-6. 将你的网站文件复制到刚才选择的本地文件夹中
-7. 回到GitHub Desktop，你会看到已更改的文件列表
-8. 在左下角添加简短描述（例如："添加网站文件"）
-9. 点击"Commit to main"按钮
-10. 然后点击顶部的"Push origin"按钮上传到GitHub
+1. Download and install [GitHub Desktop](https://desktop.github.com/)
+2. Log in to your GitHub account
+3. Click "Clone a repository from the Internet..."
+4. Select your newly created repository (`yourusername.github.io`)
+5. Choose a local folder to save the repository, click "Clone"
+6. Copy your website files to the selected local folder
+7. Return to GitHub Desktop, you'll see a list of changed files
+8. Add a brief description in the lower left corner (e.g., "Add website files")
+9. Click the "Commit to main" button
+10. Then click the "Push origin" button at the top to upload to GitHub
 
-#### 第5步：启用GitHub Pages
+#### Step 5: Enable GitHub Pages
 
-1. 在GitHub上打开你的仓库页面
-2. 点击顶部的"Settings"（设置）选项卡
-3. 在左侧菜单中，点击"Pages"
-4. 在"Source"部分，从下拉菜单中选择"main"分支
-5. 点击"Save"按钮
-6. 等待几分钟（通常1-3分钟），页面会显示："Your site is published at https://你的用户名.github.io/"
+1. Open your repository page on GitHub
+2. Click the "Settings" tab at the top
+3. In the left menu, click "Pages"
+4. In the "Source" section, select "main" branch from the dropdown menu
+5. Click the "Save" button
+6. Wait a few minutes (usually 1-3 minutes), the page will display: "Your site is published at https://yourusername.github.io/"
 
-#### 第6步：访问你的网站
+#### Step 6: Access Your Website
 
-1. 在浏览器中输入 `https://你的用户名.github.io/`
-2. 你的个人简历网站现在已经上线了！
-3. 分享这个链接，让他人也能访问你的简历网站
+1. Enter `https://yourusername.github.io/` in your browser
+2. Your personal resume website is now online!
+3. Share this link so others can access your resume website
 
-#### 第7步：更新网站内容
+#### Step 7: Update Website Content
 
-当你需要更新网站内容时：
+When you need to update website content:
 
-1. 在本地修改网站文件
-2. 使用GitHub Desktop：
-   - 会自动显示所有更改的文件
-   - 添加简短描述
-   - 点击"Commit to main"
-   - 点击"Push origin"将更改上传
-3. 或使用GitHub网页界面：
-   - 导航到要修改的文件
-   - 点击编辑图标（铅笔图标）
-   - 进行修改
-   - 点击"Commit changes"
+1. Modify website files locally
+2. Using GitHub Desktop:
+   - It will automatically show all changed files
+   - Add a brief description
+   - Click "Commit to main"
+   - Click "Push origin" to upload changes
+3. Or using the GitHub web interface:
+   - Navigate to the file you want to modify
+   - Click the edit icon (pencil icon)
+   - Make your changes
+   - Click "Commit changes"
 
-网站通常会在几分钟内自动更新。
+Your website will usually update automatically within a few minutes.
 
-#### 第8步：自定义域名（可选）
+#### Step 8: Custom Domain (Optional)
 
-如果你拥有自己的域名，可以设置让访问者通过你的域名访问网站：
+If you own a domain, you can set it up so visitors can access your website through your domain:
 
-1. 在你的域名注册商（如GoDaddy、NameCheap等）控制面板中：
-   - 添加一条CNAME记录
-   - 名称/主机设置为：www 或 @（取决于你是否希望包含www）
-   - 值/指向设置为：`你的用户名.github.io`
+1. In your domain registrar's control panel (e.g., GoDaddy, NameCheap):
+   - Add a CNAME record
+   - Set the name/host to: www or @ (depending on whether you want to include www)
+   - Set the value/points to: `yourusername.github.io`
 
-2. 在GitHub Pages设置中：
-   - 打开仓库的"Settings" > "Pages"
-   - 在"Custom domain"字段输入你的域名（例如：`www.yourdomain.com`）
-   - 点击"Save"
-   - 建议勾选"Enforce HTTPS"选项，提供更安全的访问
+2. In GitHub Pages settings:
+   - Open your repository's "Settings" > "Pages"
+   - Enter your domain in the "Custom domain" field (e.g., `www.yourdomain.com`)
+   - Click "Save"
+   - Recommend checking the "Enforce HTTPS" option for more secure access
 
-3. 在仓库根目录创建名为`CNAME`的文件（无文件扩展名）：
-   - 文件内容仅为你的域名，例如：`www.yourdomain.com`
-   - 这可以通过GitHub界面直接创建
+3. Create a file named `CNAME` (no file extension) in the repository root:
+   - The file content should only be your domain, e.g.: `www.yourdomain.com`
+   - This can be created directly through the GitHub interface
 
-DNS设置生效可能需要24-48小时，请耐心等待。
+DNS settings may take 24-48 hours to take effect, please be patient.
 
-#### 常见问题解答
+#### Frequently Asked Questions
 
-1. **网站已部署但显示404错误**
-   - 确认你的仓库名称格式正确：`用户名.github.io`
-   - 检查仓库中是否存在`index.html`文件（必须存在于根目录）
-   - 尝试清除浏览器缓存后重试
+1. **Website deployed but shows 404 error**
+   - Confirm your repository name format is correct: `username.github.io`
+   - Check if the `index.html` file exists in the root directory (must be in the root)
+   - Try clearing your browser cache and retry
 
-2. **图片不显示**
-   - 确保所有图片路径正确，使用相对路径（如`images/profile.jpg`）
-   - 检查大小写是否一致（GitHub Pages区分大小写）
+2. **Images not displaying**
+   - Ensure all image paths are correct, use relative paths (like `images/profile.jpg`)
+   - Check if case sensitivity matches (GitHub Pages is case-sensitive)
 
-3. **样式或脚本未加载**
-   - 检查文件路径是否正确
-   - 查看浏览器开发者工具中的Console和Network选项卡寻找错误
+3. **Styles or scripts not loading**
+   - Check if file paths are correct
+   - Look for errors in the Console and Network tabs of browser developer tools
 
-4. **修改后网站没有更新**
-   - GitHub Pages缓存可能需要几分钟才能刷新
-   - 尝试在浏览器中强制刷新（Ctrl+F5 或 Cmd+Shift+R）
+4. **Website not updating after changes**
+   - GitHub Pages cache may take a few minutes to refresh
+   - Try forcing a refresh in your browser (Ctrl+F5 or Cmd+Shift+R)
 
-5. **无法推送更新**
-   - 确保你有仓库的写入权限
-   - 检查网络连接
-   - 尝试刷新GitHub Desktop或重新登录
+5. **Cannot push updates**
+   - Ensure you have write permission to the repository
+   - Check your network connection
+   - Try refreshing GitHub Desktop or logging in again
 
-通过GitHub Pages托管个人简历网站不仅完全免费，而且流量不限，足以应对一般的访问需求。
+Hosting your personal resume website through GitHub Pages is not only completely free but also has unlimited traffic, sufficient for general access needs.
 
-### 故障排除
+### Troubleshooting
 
-#### 博客内容无法加载
+#### Blog Content Not Loading
 
-1. **检查是否使用本地服务器**：
-   - 使用`file://`协议直接打开HTML文件时，浏览器会阻止JavaScript加载本地Markdown文件
-   - 解决方法：使用上述的本地服务器方法预览网站
+1. **Check if using a local server**:
+   - Browsers block JavaScript from loading local Markdown files when using the `file://` protocol
+   - Solution: Use the local server methods described above to preview the website
 
-2. **编码问题**：
-   - 确保Markdown文件使用UTF-8编码保存
-   - 避免使用Windows记事本编辑，推荐使用VSCode、Sublime Text等编辑器
+2. **Encoding issues**:
+   - Ensure Markdown files are saved with UTF-8 encoding
+   - Avoid using Windows Notepad for editing, recommend VSCode, Sublime Text, etc.
 
-3. **文件路径**：
-   - 确认`posts/`目录中存在对应的Markdown文件
-   - 检查文件名大小写是否正确（在某些服务器上区分大小写）
+3. **File paths**:
+   - Confirm the corresponding Markdown files exist in the `posts/` directory
+   - Check if the filename case matches (case-sensitive on some servers)
 
-4. **图片问题**：
-   - 确保`images/blog/`目录中存在博客封面图片
-   - 检查图片格式是否受支持（推荐JPG、PNG格式）
+4. **Image issues**:
+   - Ensure blog cover images exist in the `images/blog/` directory
+   - Check if the image format is supported (JPG, PNG recommended)
 
-#### 语言切换问题
+#### Language Switching Issues
 
-- 检查`js/main.js`中的翻译对象是否包含所有需要翻译的文本
-- 确保HTML元素有正确的`data-i18n`属性
+- Check if the translation object in `js/main.js` contains all text that needs translation
+- Ensure HTML elements have the correct `data-i18n` attribute
 
-## 博客系统
+## Blog System
 
-网站包含一个使用Markdown格式的博客系统：
+The website includes a blog system using Markdown format:
 
-1. **创建新博客文章**：
-   - 在`posts/`目录中创建新的Markdown文件（如`post4.md`）
-   - 按照现有博客的格式编写内容
-   - 在`js/blog-post.js`文件中的`blogPosts`对象中添加新博客的信息
-   - 在`blog.html`中添加新博客的条目
+1. **Create new blog posts**:
+   - Create new Markdown files in the `posts/` directory (e.g., `post4.md`)
+   - Write content following the existing format
+   - Add new blog information in the `blogPosts` object in `js/blog-post.js`
+   - Add new blog entries in `blog.html`
 
-2. **简洁无图片设计**：
-   - 博客列表采用纯文本布局，无需准备封面图片
-   - 使用左侧彩色边框区分不同博客条目
-   - 在移动设备上自动切换为顶部边框样式
-   - 包含标题、日期、分类标签和摘要，重点突出内容
+2. **Clean image-free design**:
+   - Blog list uses text-only layout, no need for cover images
+   - Uses colored left borders to distinguish different blog entries
+   - Automatically switches to top border style on mobile devices
+   - Includes title, date, category tags, and summary, emphasizing content
 
-3. **博客分类标签**：
-   - 每篇博客可添加自定义分类标签
-   - 在`blog.html`中使用FontAwesome图标增强视觉效果：
+3. **Blog category tags**:
+   - Each blog can add custom category tags
+   - Use FontAwesome icons in `blog.html` to enhance visual effect:
    ```html
-   <span class="blog-category"><i class="fas fa-tag"></i> 分类名称</span>
+   <span class="blog-category"><i class="fas fa-tag"></i> Category Name</span>
    ```
 
-4. **Markdown支持**：
-   - 支持标准Markdown语法（标题、列表、链接、图片等）
-   - 代码高亮（使用highlight.js）
-   - 表格和引用
-   - 查看`posts/README.md`获取完整Markdown格式指南
+4. **Markdown support**:
+   - Supports standard Markdown syntax (headings, lists, links, images, etc.)
+   - Code highlighting (using highlight.js)
+   - Tables and quotes
+   - See `posts/README.md` for complete Markdown formatting guide
 
-5. **多语言支持**：
-   - 博客标题和日期支持中英文切换
-   - 在`js/blog-post.js`中配置多语言内容
+5. **Multilingual support**:
+   - Blog titles and dates support Chinese/English switching
+   - Configure multilingual content in `js/blog-post.js`
 
-6. **响应式设计**：
-   - 在桌面端显示为左侧边框样式
-   - 在平板和手机端自动调整为顶部边框样式
-   - 博客元数据（日期和标签）在移动端垂直排列
-   - 字体大小和间距自动调整以适应不同屏幕
+6. **Responsive design**:
+   - Displays as left border style on desktop
+   - Automatically adjusts to top border style on tablets and phones
+   - Blog metadata (date and tags) arranged vertically on mobile
+   - Font size and spacing automatically adjust to different screens
 
-7. **兼容模式**：
-   - 网站提供嵌入式博客内容作为备用方案
-   - 当无法通过网络请求加载Markdown文件时自动启用
+7. **Compatibility mode**:
+   - Website provides embedded blog content as a fallback
+   - Automatically enabled when Markdown files cannot be loaded via network requests
 
-## 文件结构
+## File Structure
 
 ```
 personal-resume/
 │
-├── index.html           # 主页/关于我页面
-├── publications.html    # 发表的论文页面
-├── blog.html            # 个人博客列表页面
-├── blog-post.html       # 博客文章详情页面
-├── contact.html         # 联系方式页面
-├── styles/              # 样式文件
-│   ├── main.css         # 主样式表
-│   └── blog-post.css    # 博客详情页样式
-├── js/                  # JavaScript文件
-│   ├── main.js          # 主脚本文件（包含语言切换功能）
-│   └── blog-post.js     # 博客详情页脚本
-├── posts/               # 博客Markdown文件
+├── index.html           # Homepage/About Me page
+├── publications.html    # Published papers page
+├── blog.html            # Personal blog list page
+├── blog-post.html       # Blog article detail page
+├── contact.html         # Contact information page
+├── styles/              # Style files
+│   ├── main.css         # Main stylesheet
+│   └── blog-post.css    # Blog detail page style
+├── js/                  # JavaScript files
+│   ├── main.js          # Main script file (includes language switching)
+│   └── blog-post.js     # Blog detail page script
+├── posts/               # Blog Markdown files
 │   ├── post1.md
 │   ├── post2.md
 │   ├── post3.md
-│   └── README.md        # Markdown格式指南
-├── images/              # 图片资源
-│   ├── logo.svg         # 网站Logo
-│   ├── profile.jpg      # 个人照片
-│   └── blog/            # 博客图片
+│   └── README.md        # Markdown formatting guide
+├── images/              # Image resources
+│   ├── logo.svg         # Website Logo
+│   ├── profile.jpg      # Personal photo
+│   └── blog/            # Blog images
 │       ├── blog1.jpg
 │       ├── blog2.jpg
 │       ├── blog3.jpg
-│       └── default.jpg  # 默认/备用图片
-└── README.md            # 项目说明
+│       └── default.jpg  # Default/fallback image
+└── README.md            # Project documentation
 ```
 
-## 语言切换功能
+## Language Switching Feature
 
-此网站支持中英文双语切换，并且会在页面跳转时保持所选语言：
+This website supports Chinese/English bilingual switching and maintains the selected language during page navigation:
 
-- 用户的语言选择会保存在localStorage中，确保下次访问时保持一致
-- 页面导航链接会自动添加语言参数，以便在跳转后保持当前选择的语言
-- 所有静态文本都支持翻译，可在`main.js`文件中的translations对象中进行编辑或添加新的翻译项
+- User language selection is saved in localStorage, ensuring consistency in future visits
+- Page navigation links automatically add language parameters to maintain the current language after navigation
+- All static text supports translation, which can be edited or added in the translations object in `main.js`
 
-## 自定义联系表单
+## Custom Contact Form
 
-当前表单是静态的，如需启用实际提交功能，请修改`main.js`中的表单提交事件处理部分，添加您自己的提交逻辑或后端API。
+The current form is static. To enable actual submission functionality, modify the form submission event handler in `main.js` to add your own submission logic or backend API.
 
 ```javascript
-// 表单提交事件
+// Form submission event
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // 在这里添加表单提交逻辑
-        // 例如发送到后端API或邮件服务
+        // Add your form submission logic here
+        // Such as sending to a backend API or email service
     });
 }
 ```
 
-## 兼容性
+## Compatibility
 
-此网站兼容所有现代浏览器，包括：
-- Chrome, Firefox, Safari, Edge (最新版本)
-- 移动端浏览器
+This website is compatible with all modern browsers, including:
+- Chrome, Firefox, Safari, Edge (latest versions)
+- Mobile browsers
 
-## 许可
+## License
 
-免费使用，可自由修改适应个人需求。
+Free to use, can be freely modified to suit personal needs.
 
 ---
 
-✨ 希望这个模板能帮助您展示您的专业形象！
+✨ Hope this template helps you showcase your professional image! 
